@@ -2,8 +2,7 @@ const { expect } = require("chai");
 
 const caesarTest = require("../src/caesar").caesar;
 /*
-For the Caesar shift (example: caesar("Zebra Magazine", 3) => "cheud pdjdclqh"), 
-the tests that you write should test that the following is true:
+For the Caesar shift (example: caesar("Zebra Magazine", 3) => "cheud pdjdclqh")
 */
 describe("Caesar shift should return an encoded or decoded message based on the arguments.", () => {
   it("Should encode a string with a given shift parameter", () => {
