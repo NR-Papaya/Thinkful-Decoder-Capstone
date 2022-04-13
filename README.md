@@ -4,7 +4,7 @@
 *You're planning a surprise birthday party for a friend who loves escape rooms and puzzles. What better way to practice your new coding skills than to build an application that will help you encode and decode all kinds of fun messages?*
 - Use Test Driven Development (TDD)
 - Write unit tests
-- Determine and execute your own approach to code/decode:
+- Determine and execute your own approach to encode/decode:
 1. Caesar Shift
 2. Polybius Square
 3. Substitution Cipher
