@@ -28,11 +28,9 @@ const polybiusModule = (function () {
     y: 45,
     z: 55,
   };
-  console.log(polybius("23513434 11 2251", false));
   function polybius(input, encode = true) {
     //check to make sure input for decoding is valid
-    const removeSpacesInput = input.replace(/ /g, "").length;
-    const inputCheck = removeSpacesInput % 2;
+    const inputCheck = input.replace(/ /g, "").length % 2;
     if (encode === false && inputCheck !== 0) {
       return false;
     }
