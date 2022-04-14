@@ -34,8 +34,13 @@ describe("Unit test for polybius()", () => {
   });
   // It maintains spaces in the message, before and after encoding or decoding.
   it("Should keep spaces and special characters", () => {
-    const actual = polybiusTest("mess age");
-    const expected = "23513434 112251";
+    const actual = polybiusTest("mess a ge");
+    const expected = "23513434 11 2251";
+    expect(actual).to.eql(expected);
+  });
+  it("Should keep spaces and special characters when decoding", () => {
+    const actual = polybiusTest("23513434 11 2251",false);
+    const expected = "mess a ge";
     expect(actual).to.eql(expected);
   });
   // When decoding, should return false if the string length is not even
