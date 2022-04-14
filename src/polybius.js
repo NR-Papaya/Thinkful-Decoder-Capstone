@@ -28,6 +28,7 @@ const polybiusModule = (function () {
     y: 45,
     z: 55,
   };
+
   function polybius(input, encode = true) {
     //check to make sure input for decoding is valid
     const inputCheck = input.replace(/ /g, "").length % 2;
@@ -93,4 +94,6 @@ const polybiusModule = (function () {
   };
 })();
 
-module.exports = { polybius: polybiusModule.polybius };
+module.exports = {
+  polybius: polybiusModule.polybius
+};

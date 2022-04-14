@@ -1,4 +1,6 @@
-const { expect } = require("chai");
+const {
+  expect
+} = require("chai");
 
 const caesarTest = require("../src/caesar").caesar;
 /*

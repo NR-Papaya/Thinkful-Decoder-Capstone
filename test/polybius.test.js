@@ -1,4 +1,6 @@
-const { expect } = require("chai");
+const {
+  expect
+} = require("chai");
 const polybiusTest = require("../src/polybius").polybius;
 
 // For the Polybius square (example: polybius("message") => "23513434112251")
@@ -10,7 +12,7 @@ describe("Unit test for polybius()", () => {
     expect(actual).to.eql(expected);
   });
   it("Should decode correctly", () => {
-    const actual = polybiusTest("23513434112251",false);
+    const actual = polybiusTest("23513434112251", false);
     const expected = "message";
     expect(actual).to.eql(expected);
   });
@@ -22,7 +24,7 @@ describe("Unit test for polybius()", () => {
   });
   // When decoding, it translates 42 to (i/j).
   it("Should decode 42 as 'i/j'", () => {
-    const actual = polybiusTest("42",false);
+    const actual = polybiusTest("42", false);
     const expected = "i/j";
     expect(actual).to.eql(expected);
   });
@@ -39,13 +41,13 @@ describe("Unit test for polybius()", () => {
     expect(actual).to.eql(expected);
   });
   it("Should keep spaces and special characters when decoding", () => {
-    const actual = polybiusTest("23513434 11 2251",false);
+    const actual = polybiusTest("23513434 11 2251", false);
     const expected = "mess a ge";
     expect(actual).to.eql(expected);
   });
   // When decoding, should return false if the string length is not even
   it("Should return false when the decoding number list is not even", () => {
-    const actual = polybiusTest("235",false);
+    const actual = polybiusTest("235", false);
     expect(actual).to.be.false;
   });
 });
