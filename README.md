@@ -11,7 +11,7 @@
 
 
 ### Project Files
-The following project files were used to generated the necessary functions and execute unit testing:
+The following project files were used to generate the necessary functions and execute unit testing:
 ##### Encode/Decode Functions
 - ../src/caesar.js
 - ../src/polybius.js
